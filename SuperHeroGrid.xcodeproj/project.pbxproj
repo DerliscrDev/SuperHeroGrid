@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB15D549E2A342B21DDEE71 /* Pods_SuperHeroGrid_SuperHeroGridUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E4AD629CFB32F8BAD34324 /* Pods_SuperHeroGrid_SuperHeroGridUITests.framework */; };
+		5BA6A2BC6A8C9AD6CB30BEA4 /* Pods_SuperHeroGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853F144CFC882033F5E1F951 /* Pods_SuperHeroGrid.framework */; };
+		71212A26382B2EFBF3478BF6 /* Pods_SuperHeroGridTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056243F9A7FA1C035C3725A6 /* Pods_SuperHeroGridTests.framework */; };
 		EE4547B0298C713900699E53 /* SuperHeroGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */; };
 		EE4547B2298C713900699E53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547B1298C713900699E53 /* ContentView.swift */; };
 		EE4547B4298C713A00699E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4547B3298C713A00699E53 /* Assets.xcassets */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		056243F9A7FA1C035C3725A6 /* Pods_SuperHeroGridTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperHeroGridTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3582690A7F66369C7D93C66C /* Pods-SuperHeroGrid-SuperHeroGridUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid-SuperHeroGridUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests.release.xcconfig"; sourceTree = "<group>"; };
+		40C93DD33A096238AEAC4AB9 /* Pods-SuperHeroGridTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGridTests.release.xcconfig"; path = "Target Support Files/Pods-SuperHeroGridTests/Pods-SuperHeroGridTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C79C92EC8DC4F56D034B3FD /* Pods-SuperHeroGridTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGridTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGridTests/Pods-SuperHeroGridTests.debug.xcconfig"; sourceTree = "<group>"; };
+		853F144CFC882033F5E1F951 /* Pods_SuperHeroGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperHeroGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C29E259A58C90E80FE15814 /* Pods-SuperHeroGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid.release.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid/Pods-SuperHeroGrid.release.xcconfig"; sourceTree = "<group>"; };
+		BBEADC9E1F0110C801FB2C4E /* Pods-SuperHeroGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid/Pods-SuperHeroGrid.debug.xcconfig"; sourceTree = "<group>"; };
+		D7E4AD629CFB32F8BAD34324 /* Pods_SuperHeroGrid_SuperHeroGridUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperHeroGrid_SuperHeroGridUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4547AC298C713900699E53 /* SuperHeroGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroGridApp.swift; sourceTree = "<group>"; };
 		EE4547B1298C713900699E53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +55,8 @@
 		EE4547C6298C713B00699E53 /* SuperHeroGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4547CA298C713B00699E53 /* SuperHeroGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroGridUITests.swift; sourceTree = "<group>"; };
 		EE4547CC298C713B00699E53 /* SuperHeroGridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroGridUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE4547D9298C747000699E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA6A2BC6A8C9AD6CB30BEA4 /* Pods_SuperHeroGrid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71212A26382B2EFBF3478BF6 /* Pods_SuperHeroGridTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +80,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB15D549E2A342B21DDEE71 /* Pods_SuperHeroGrid_SuperHeroGridUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD851B63C83B7FCD1C782889 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBEADC9E1F0110C801FB2C4E /* Pods-SuperHeroGrid.debug.xcconfig */,
+				8C29E259A58C90E80FE15814 /* Pods-SuperHeroGrid.release.xcconfig */,
+				FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */,
+				3582690A7F66369C7D93C66C /* Pods-SuperHeroGrid-SuperHeroGridUITests.release.xcconfig */,
+				5C79C92EC8DC4F56D034B3FD /* Pods-SuperHeroGridTests.debug.xcconfig */,
+				40C93DD33A096238AEAC4AB9 /* Pods-SuperHeroGridTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E26B996F68F65D2355455BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				853F144CFC882033F5E1F951 /* Pods_SuperHeroGrid.framework */,
+				D7E4AD629CFB32F8BAD34324 /* Pods_SuperHeroGrid_SuperHeroGridUITests.framework */,
+				056243F9A7FA1C035C3725A6 /* Pods_SuperHeroGridTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE4547A3298C713900699E53 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +117,8 @@
 				EE4547BF298C713B00699E53 /* SuperHeroGridTests */,
 				EE4547C9298C713B00699E53 /* SuperHeroGridUITests */,
 				EE4547AD298C713900699E53 /* Products */,
+				AD851B63C83B7FCD1C782889 /* Pods */,
+				E26B996F68F65D2355455BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */,
-				EE4547B1298C713900699E53 /* ContentView.swift */,
+				EE4547DD298C74AC00699E53 /* Utilities */,
+				EE4547DA298C748000699E53 /* Model */,
+				EE4547DB298C748700699E53 /* View */,
+				EE4547DC298C749000699E53 /* ViewModel */,
+				EE4547D9298C747000699E53 /* Info.plist */,
 				EE4547B3298C713A00699E53 /* Assets.xcassets */,
 				EE4547B5298C713A00699E53 /* Preview Content */,
 			);
@@ -127,6 +172,35 @@
 			path = SuperHeroGridUITests;
 			sourceTree = "<group>";
 		};
+		EE4547DA298C748000699E53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE4547DB298C748700699E53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE4547B1298C713900699E53 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE4547DC298C749000699E53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE4547DD298C74AC00699E53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE4547D0298C713B00699E53 /* Build configuration list for PBXNativeTarget "SuperHeroGrid" */;
 			buildPhases = (
+				3DC25FD82B8B7EA5E7261774 /* [CP] Check Pods Manifest.lock */,
 				EE4547A8298C713900699E53 /* Sources */,
 				EE4547A9298C713900699E53 /* Frameworks */,
 				EE4547AA298C713900699E53 /* Resources */,
+				D5BC9BED9340803DE1CC7D9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE4547D3298C713B00699E53 /* Build configuration list for PBXNativeTarget "SuperHeroGridTests" */;
 			buildPhases = (
+				1CBBC62B91E89122483FFCB3 /* [CP] Check Pods Manifest.lock */,
 				EE4547B8298C713B00699E53 /* Sources */,
 				EE4547B9298C713B00699E53 /* Frameworks */,
 				EE4547BA298C713B00699E53 /* Resources */,
@@ -169,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE4547D6298C713B00699E53 /* Build configuration list for PBXNativeTarget "SuperHeroGridUITests" */;
 			buildPhases = (
+				E5C6FE63E5F4C1F36BCEF407 /* [CP] Check Pods Manifest.lock */,
 				EE4547C2298C713B00699E53 /* Sources */,
 				EE4547C3298C713B00699E53 /* Frameworks */,
 				EE4547C4298C713B00699E53 /* Resources */,
+				70EFE878572BCE2B0CCAEC57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +330,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CBBC62B91E89122483FFCB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperHeroGridTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DC25FD82B8B7EA5E7261774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperHeroGrid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70EFE878572BCE2B0CCAEC57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5BC9BED9340803DE1CC7D9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuperHeroGrid/Pods-SuperHeroGrid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuperHeroGrid/Pods-SuperHeroGrid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuperHeroGrid/Pods-SuperHeroGrid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C6FE63E5F4C1F36BCEF407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperHeroGrid-SuperHeroGridUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE4547A8298C713900699E53 /* Sources */ = {
@@ -411,6 +593,7 @@
 		};
 		EE4547D1298C713B00699E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEADC9E1F0110C801FB2C4E /* Pods-SuperHeroGrid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -420,11 +603,11 @@
 				DEVELOPMENT_TEAM = K5323HMYDK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SuperHeroGrid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Super Hero Grid";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +623,7 @@
 		};
 		EE4547D2298C713B00699E53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C29E259A58C90E80FE15814 /* Pods-SuperHeroGrid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,11 +633,11 @@
 				DEVELOPMENT_TEAM = K5323HMYDK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SuperHeroGrid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Super Hero Grid";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +653,7 @@
 		};
 		EE4547D4298C713B00699E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C79C92EC8DC4F56D034B3FD /* Pods-SuperHeroGridTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +674,7 @@
 		};
 		EE4547D5298C713B00699E53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40C93DD33A096238AEAC4AB9 /* Pods-SuperHeroGridTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +695,7 @@
 		};
 		EE4547D7298C713B00699E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +714,7 @@
 		};
 		EE4547D8298C713B00699E53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3582690A7F66369C7D93C66C /* Pods-SuperHeroGrid-SuperHeroGridUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

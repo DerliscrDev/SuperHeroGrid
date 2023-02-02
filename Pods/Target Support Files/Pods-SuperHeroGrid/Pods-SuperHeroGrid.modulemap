@@ -1,0 +1,6 @@
+framework module Pods_SuperHeroGrid {
+  umbrella header "Pods-SuperHeroGrid-umbrella.h"
+
+  export *
+  module * { export * }
+}
