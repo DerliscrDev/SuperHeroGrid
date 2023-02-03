@@ -19,11 +19,13 @@
 		EE4547CD298C713B00699E53 /* SuperHeroGridUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547CC298C713B00699E53 /* SuperHeroGridUITestsLaunchTests.swift */; };
 		EE4547E0298C76B600699E53 /* SuperHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547DF298C76B600699E53 /* SuperHeroModel.swift */; };
 		EE4547E2298C781100699E53 /* SuperHeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547E1298C781100699E53 /* SuperHeroViewModel.swift */; };
-		EE4547E4298C785600699E53 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547E3298C785600699E53 /* NetworkingManager.swift */; };
-		EE4547E7298C790000699E53 /* Preview Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547E6298C790000699E53 /* Preview Provider.swift */; };
+		EE4547E4298C785600699E53 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547E3298C785600699E53 /* APIRouter.swift */; };
+		EE4547E7298C790000699E53 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547E6298C790000699E53 /* DeveloperPreview.swift */; };
 		EE4547EA298C7B1500699E53 /* SuperHeroDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547E9298C7B1500699E53 /* SuperHeroDataService.swift */; };
 		EE4547EC298C802700699E53 /* SuperHeroItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547EB298C802700699E53 /* SuperHeroItemView.swift */; };
 		EE4547EE298C82BE00699E53 /* SuperHeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547ED298C82BE00699E53 /* SuperHeroDetailView.swift */; };
+		EE4547F0298C8E8C00699E53 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547EF298C8E8C00699E53 /* Constants.swift */; };
+		EE4547F2298C900800699E53 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F1298C900800699E53 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +67,13 @@
 		EE4547D9298C747000699E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EE4547DF298C76B600699E53 /* SuperHeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroModel.swift; sourceTree = "<group>"; };
 		EE4547E1298C781100699E53 /* SuperHeroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewModel.swift; sourceTree = "<group>"; };
-		EE4547E3298C785600699E53 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		EE4547E6298C790000699E53 /* Preview Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview Provider.swift"; sourceTree = "<group>"; };
+		EE4547E3298C785600699E53 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		EE4547E6298C790000699E53 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		EE4547E9298C7B1500699E53 /* SuperHeroDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDataService.swift; sourceTree = "<group>"; };
 		EE4547EB298C802700699E53 /* SuperHeroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroItemView.swift; sourceTree = "<group>"; };
 		EE4547ED298C82BE00699E53 /* SuperHeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailView.swift; sourceTree = "<group>"; };
+		EE4547EF298C8E8C00699E53 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE4547F1298C900800699E53 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +221,9 @@
 		EE4547DD298C74AC00699E53 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				EE4547E3298C785600699E53 /* NetworkingManager.swift */,
+				EE4547E3298C785600699E53 /* APIRouter.swift */,
+				EE4547EF298C8E8C00699E53 /* Constants.swift */,
+				EE4547F1298C900800699E53 /* APIClient.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -225,7 +231,7 @@
 		EE4547E5298C78F500699E53 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EE4547E6298C790000699E53 /* Preview Provider.swift */,
+				EE4547E6298C790000699E53 /* DeveloperPreview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -481,9 +487,11 @@
 				EE4547EE298C82BE00699E53 /* SuperHeroDetailView.swift in Sources */,
 				EE4547E0298C76B600699E53 /* SuperHeroModel.swift in Sources */,
 				EE4547B2298C713900699E53 /* SuperHeroGridView.swift in Sources */,
-				EE4547E4298C785600699E53 /* NetworkingManager.swift in Sources */,
+				EE4547F2298C900800699E53 /* APIClient.swift in Sources */,
+				EE4547F0298C8E8C00699E53 /* Constants.swift in Sources */,
+				EE4547E4298C785600699E53 /* APIRouter.swift in Sources */,
 				EE4547EA298C7B1500699E53 /* SuperHeroDataService.swift in Sources */,
-				EE4547E7298C790000699E53 /* Preview Provider.swift in Sources */,
+				EE4547E7298C790000699E53 /* DeveloperPreview.swift in Sources */,
 				EE4547B0298C713900699E53 /* SuperHeroGridApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

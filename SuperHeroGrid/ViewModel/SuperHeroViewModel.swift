@@ -11,12 +11,18 @@ class SuperHeroViewModel: ObservableObject {
     
     @Published var superHeros: [SuperHeroModel] = []
     
+    private let superHeroDataService: SuperHeroDataService
+    
+    init(superHeroDataService: SuperHeroDataService = SuperHeroDataService()) {
+        self.superHeroDataService = superHeroDataService
+    }
+    
     func fetchSuperHeros() {
-        SuperHeroDataService().getSuperHeros { result in
+        superHeroDataService.getSuperHeros { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let superHeros):
-                    self.superHeros = superHeros ?? []
+                    self.superHeros = superHeros
                 case .failure(let error):
                     print(error)
                 }
