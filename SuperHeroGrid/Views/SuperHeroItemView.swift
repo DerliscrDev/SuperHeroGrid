@@ -8,20 +8,30 @@
 import SwiftUI
 
 struct SuperHeroItemView: View {
-    
+    // MARK: - Properties
     var superHero: SuperHeroModel
     
     @ObservedObject var superHeroViewModel: SuperHeroViewModel
     @State private var imageHidden: Bool = false
     
+    
+    // MARK: - Body
     var body: some View {
         if imageHidden {
             Button( action: {
                 imageHidden.toggle()
             }) {
-                Text("Image Hidden")
-                    .font(.system(size: 14))
-                    .foregroundColor(Color.blue)
+                VStack {
+                    Image(systemName: Icons.eyeFill.filledIcon)
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(Color.blue)
+                        .frame(width: 50, height: 50)
+                    Text("Show Image")
+                        .font(.system(size: 15))
+                        .foregroundColor(Color.blue)
+                        .fontWeight(.bold)
+                }
             }
             .frame(height: 240,alignment: .center)
         } else {
@@ -41,11 +51,7 @@ struct SuperHeroItemView: View {
                         Button {
                             imageHidden.toggle()
                         } label: {
-                            Image(systemName: "eye.slash.circle.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundColor(Color.blue)
-                                .frame(width: 30, height: 30)
+                            ItemButtonView(icon: Icons.eyeSlashFill.filledIcon, color: .blue)
                         }
                         .background(
                             Circle()
@@ -55,11 +61,7 @@ struct SuperHeroItemView: View {
                         Button {
                             superHeroViewModel.deleteSuperHero(superHero: superHero)
                         } label: {
-                            Image(systemName: "minus.circle.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundColor(Color.red)
-                                .frame(width: 30, height: 30)
+                            ItemButtonView(icon: Icons.minusFill.filledIcon, color: .red)
                         }
                         .background(
                             Circle()
@@ -71,21 +73,14 @@ struct SuperHeroItemView: View {
                     Spacer()
                     
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(superHero.name ?? "")
-                            .font(.system(size: 15))
-                            .fontWeight(.heavy)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.leading)
+
+                        nameTextView
+                        
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(superHero.height)
-                                .font(.caption2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
                             
-                            Text(superHero.weight)
-                                .font(.caption2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
+                            heightTextView
+                            
+                            weightTextView
                         }
                     }
                 }
@@ -98,6 +93,31 @@ struct SuperHeroItemView: View {
     }
 }
 
+// MARK: - Extension
+extension SuperHeroItemView {
+    
+    private var nameTextView: some View {
+        Text(superHero.name ?? "")
+            .font(.system(size: 20))
+            .fontWeight(.heavy)
+            .lineLimit(1)
+            .foregroundColor(.white)
+            .multilineTextAlignment(.leading)
+    }
+    
+    private var heightTextView: some View {
+        Text(superHero.height)
+            .modifier(ItemTextModifier())
+    }
+    
+    private var weightTextView: some View {
+        Text(superHero.weight)
+            .modifier(ItemTextModifier())
+    }
+}
+
+
+// MARK: - Preview
 struct SuperHeroItemView_Previews: PreviewProvider {
     
     static var previews: some View {

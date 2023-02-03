@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MotionAnimationView: View {
     
+    // MARK: - Properties
     @State private var randomCircle = Int.random(in: 12...16)
     @State private var isAnimating: Bool = false
     
@@ -32,6 +33,7 @@ struct MotionAnimationView: View {
         return Double.random(in: 0...2)
     }
     
+    // MARK: - Body
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -45,14 +47,15 @@ struct MotionAnimationView: View {
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
                         )
-                        .animation(
-                            Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
+                        .onAppear {
+                            withAnimation(.interpolatingSpring(stiffness: 0.5, damping: 0.5)
                                 .repeatForever()
                                 .speed(randomSpeed())
                                 .delay(randomDelay())
-                        )
-                        .onAppear {
-                            isAnimating = true
+                            ) {
+                                isAnimating = true
+                            }
+                            
                         }
                 }
             }
@@ -61,6 +64,7 @@ struct MotionAnimationView: View {
     }
 }
 
+// MARK: - Preview
 struct MotionAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         MotionAnimationView()

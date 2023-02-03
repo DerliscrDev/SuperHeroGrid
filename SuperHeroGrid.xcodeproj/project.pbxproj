@@ -27,6 +27,8 @@
 		EE4547F2298C900800699E53 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F1298C900800699E53 /* APIClient.swift */; };
 		EE4547F6298CCC6900699E53 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F5298CCC6900699E53 /* ArrayExtension.swift */; };
 		EE4547F8298CFD4700699E53 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F7298CFD4700699E53 /* MotionAnimationView.swift */; };
+		EE7D00D6298D5A6800974CF6 /* ItemButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D00D5298D5A6800974CF6 /* ItemButtonView.swift */; };
+		EE7D00DC298D60B000974CF6 /* ItemTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D00DB298D60B000974CF6 /* ItemTextModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		EE4547F1298C900800699E53 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EE4547F5298CCC6900699E53 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		EE4547F7298CFD4700699E53 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		EE7D00D5298D5A6800974CF6 /* ItemButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButtonView.swift; sourceTree = "<group>"; };
+		EE7D00DB298D60B000974CF6 /* ItemTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTextModifier.swift; sourceTree = "<group>"; };
 		FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,12 +159,13 @@
 		EE4547AE298C713900699E53 /* SuperHeroGrid */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D00D8298D602D00974CF6 /* Modifier */,
 				EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */,
-				EE4547E8298C7AFE00699E53 /* Services */,
+				EE4547E8298C7AFE00699E53 /* Service */,
 				EE4547E5298C78F500699E53 /* Extensions */,
 				EE4547DD298C74AC00699E53 /* Utilities */,
 				EE4547DA298C748000699E53 /* Model */,
-				EE4547DB298C748700699E53 /* View */,
+				EE4547DB298C748700699E53 /* Views */,
 				EE4547DC298C749000699E53 /* ViewModel */,
 				EE4547D9298C747000699E53 /* Info.plist */,
 				EE4547B3298C713A00699E53 /* Assets.xcassets */,
@@ -202,14 +207,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EE4547DB298C748700699E53 /* View */ = {
+		EE4547DB298C748700699E53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EE4547B1298C713900699E53 /* SuperHeroGridView.swift */,
 				EE4547EB298C802700699E53 /* SuperHeroItemView.swift */,
 				EE4547F7298CFD4700699E53 /* MotionAnimationView.swift */,
+				EE7D00D5298D5A6800974CF6 /* ItemButtonView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EE4547DC298C749000699E53 /* ViewModel */ = {
@@ -239,12 +245,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		EE4547E8298C7AFE00699E53 /* Services */ = {
+		EE4547E8298C7AFE00699E53 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				EE4547E9298C7B1500699E53 /* SuperHeroDataService.swift */,
 			);
-			path = Services;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EE7D00D8298D602D00974CF6 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D00DB298D60B000974CF6 /* ItemTextModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D00D6298D5A6800974CF6 /* ItemButtonView.swift in Sources */,
 				EE4547E2298C781100699E53 /* SuperHeroViewModel.swift in Sources */,
 				EE4547EC298C802700699E53 /* SuperHeroItemView.swift in Sources */,
 				EE4547E0298C76B600699E53 /* SuperHeroModel.swift in Sources */,
@@ -492,6 +507,7 @@
 				EE4547F2298C900800699E53 /* APIClient.swift in Sources */,
 				EE4547F0298C8E8C00699E53 /* Constants.swift in Sources */,
 				EE4547E4298C785600699E53 /* APIRouter.swift in Sources */,
+				EE7D00DC298D60B000974CF6 /* ItemTextModifier.swift in Sources */,
 				EE4547EA298C7B1500699E53 /* SuperHeroDataService.swift in Sources */,
 				EE4547E7298C790000699E53 /* DeveloperPreview.swift in Sources */,
 				EE4547B0298C713900699E53 /* SuperHeroGridApp.swift in Sources */,

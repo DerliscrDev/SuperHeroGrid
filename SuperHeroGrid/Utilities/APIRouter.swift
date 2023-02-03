@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-public enum APIRouter: URLRequestConvertible {
+enum APIRouter: URLRequestConvertible {
     
     case getSuperHeros
     
@@ -26,7 +26,7 @@ public enum APIRouter: URLRequestConvertible {
         }
     }
     
-    public func asURLRequest() throws -> URLRequest {
+    func asURLRequest() throws -> URLRequest {
         let url = try Constants.apiURL.asURL()
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
