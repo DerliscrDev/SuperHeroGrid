@@ -12,10 +12,10 @@ class SuperHeroViewModel: ObservableObject {
     
     @Published var superHeros: [SuperHeroModel] = []
     
-    private let superHeroDataService: SuperHeroDataService
+    private let superHeroDataService: SuperHeroDataServiceProtocol
     private var superHerosCopy: [SuperHeroModel] = []
     
-    init(superHeroDataService: SuperHeroDataService = SuperHeroDataService()) {
+    init(superHeroDataService: SuperHeroDataServiceProtocol = SuperHeroDataService()) {
         self.superHeroDataService = superHeroDataService
     }
     

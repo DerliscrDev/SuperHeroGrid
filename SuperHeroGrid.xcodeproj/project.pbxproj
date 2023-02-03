@@ -29,6 +29,9 @@
 		EE4547F8298CFD4700699E53 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F7298CFD4700699E53 /* MotionAnimationView.swift */; };
 		EE7D00D6298D5A6800974CF6 /* ItemButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D00D5298D5A6800974CF6 /* ItemButtonView.swift */; };
 		EE7D00DC298D60B000974CF6 /* ItemTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D00DB298D60B000974CF6 /* ItemTextModifier.swift */; };
+		EE7D00DF298D69B600974CF6 /* SuperHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = EE7D00DE298D69B600974CF6 /* SuperHeroes.json */; };
+		EE7D00E3298D6B2200974CF6 /* MockSuperHeroDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D00E2298D6B2200974CF6 /* MockSuperHeroDataService.swift */; };
+		EE7D00E5298D6F7C00974CF6 /* SuperHeroViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D00E4298D6F7C00974CF6 /* SuperHeroViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		EE4547F7298CFD4700699E53 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		EE7D00D5298D5A6800974CF6 /* ItemButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButtonView.swift; sourceTree = "<group>"; };
 		EE7D00DB298D60B000974CF6 /* ItemTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTextModifier.swift; sourceTree = "<group>"; };
+		EE7D00DE298D69B600974CF6 /* SuperHeroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuperHeroes.json; sourceTree = "<group>"; };
+		EE7D00E2298D6B2200974CF6 /* MockSuperHeroDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSuperHeroDataService.swift; sourceTree = "<group>"; };
+		EE7D00E4298D6F7C00974CF6 /* SuperHeroViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewModelTest.swift; sourceTree = "<group>"; };
 		FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,8 +165,8 @@
 		EE4547AE298C713900699E53 /* SuperHeroGrid */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D00DD298D685400974CF6 /* MainApp */,
 				EE7D00D8298D602D00974CF6 /* Modifier */,
-				EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */,
 				EE4547E8298C7AFE00699E53 /* Service */,
 				EE4547E5298C78F500699E53 /* Extensions */,
 				EE4547DD298C74AC00699E53 /* Utilities */,
@@ -185,7 +191,10 @@
 		EE4547BF298C713B00699E53 /* SuperHeroGridTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D00DE298D69B600974CF6 /* SuperHeroes.json */,
 				EE4547C0298C713B00699E53 /* SuperHeroGridTests.swift */,
+				EE7D00E2298D6B2200974CF6 /* MockSuperHeroDataService.swift */,
+				EE7D00E4298D6F7C00974CF6 /* SuperHeroViewModelTest.swift */,
 			);
 			path = SuperHeroGridTests;
 			sourceTree = "<group>";
@@ -259,6 +268,14 @@
 				EE7D00DB298D60B000974CF6 /* ItemTextModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		EE7D00DD298D685400974CF6 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */,
+			);
+			path = MainApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D00DF298D69B600974CF6 /* SuperHeroes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +538,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D00E5298D6F7C00974CF6 /* SuperHeroViewModelTest.swift in Sources */,
 				EE4547C1298C713B00699E53 /* SuperHeroGridTests.swift in Sources */,
+				EE7D00E3298D6B2200974CF6 /* MockSuperHeroDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

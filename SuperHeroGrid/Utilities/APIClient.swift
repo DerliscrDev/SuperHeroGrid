@@ -22,24 +22,26 @@ class APIClient {
                                     route: APIRouter,
                                     completion: @escaping(Result<T, NetworkError>) -> Void) {
         AF.request(route).response { response in
-            let result = response.result
-            
-            switch result {
-            case .success(let data):
-                guard let data = data else {
-                    completion(.failure(.cannotDecodeContentData))
-                    return
-                }
+            DispatchQueue.main.async {
+                let result = response.result
                 
-                guard let object = try? JSONDecoder().decode(T.self, from: data) else {
-                    completion(.failure(.downloadDecodingFailedToComplete))
-                    return
+                switch result {
+                case .success(let data):
+                    guard let data = data else {
+                        completion(.failure(.cannotDecodeContentData))
+                        return
+                    }
+                    
+                    guard let object = try? JSONDecoder().decode(T.self, from: data) else {
+                        completion(.failure(.downloadDecodingFailedToComplete))
+                        return
+                    }
+                    completion(.success(object))
+                    
+                case .failure(let error):
+                    completion(.failure(.badURLResponse))
+                    print(error.localizedDescription)
                 }
-                completion(.success(object))
-                
-            case .failure(let error):
-                completion(.failure(.badURLResponse))
-                print(error.localizedDescription)
             }
         }
     }
