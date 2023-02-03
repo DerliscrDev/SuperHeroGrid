@@ -12,6 +12,7 @@ struct SuperHeroGridApp: App {
     var body: some Scene {
         WindowGroup {
             SuperHeroGridView()
+                .preferredColorScheme(.dark)
         }
     }
 }

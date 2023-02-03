@@ -17,12 +17,12 @@ struct SuperHeroModel: Identifiable, Codable {
     let connections: Connections?
     let images: Images?
     
-    var image: String {
-        return images?.md ?? ""
+    var height: String {
+        return "(Height: \(appearance?.height?.last ?? "")"
     }
     
-    var imageName: String {
-        return name ?? ""
+    var weight: String {
+        return "(Weight: \(appearance?.weight?.last ?? "")"
     }
 }
 
