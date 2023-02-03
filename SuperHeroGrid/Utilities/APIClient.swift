@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 enum NetworkError: LocalizedError {
+    
     case badURLResponse
     case cannotDecodeContentData
     case downloadDecodingFailedToComplete
@@ -37,7 +38,7 @@ class APIClient {
                 completion(.success(object))
                 
             case .failure(let error):
-                completion(.failure(.unknown))
+                completion(.failure(.badURLResponse))
                 print(error.localizedDescription)
             }
         }
