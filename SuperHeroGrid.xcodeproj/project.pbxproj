@@ -26,6 +26,7 @@
 		EE4547EE298C82BE00699E53 /* SuperHeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547ED298C82BE00699E53 /* SuperHeroDetailView.swift */; };
 		EE4547F0298C8E8C00699E53 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547EF298C8E8C00699E53 /* Constants.swift */; };
 		EE4547F2298C900800699E53 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F1298C900800699E53 /* APIClient.swift */; };
+		EE4547F4298CAD4600699E53 /* ClientSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4547F3298CAD4600699E53 /* ClientSessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		EE4547ED298C82BE00699E53 /* SuperHeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailView.swift; sourceTree = "<group>"; };
 		EE4547EF298C8E8C00699E53 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE4547F1298C900800699E53 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EE4547F3298CAD4600699E53 /* ClientSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSessionManager.swift; sourceTree = "<group>"; };
 		FDE0957E0E104BBB5ED763EA /* Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperHeroGrid-SuperHeroGridUITests/Pods-SuperHeroGrid-SuperHeroGridUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,9 +155,9 @@
 		EE4547AE298C713900699E53 /* SuperHeroGrid */ = {
 			isa = PBXGroup;
 			children = (
+				EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */,
 				EE4547E8298C7AFE00699E53 /* Services */,
 				EE4547E5298C78F500699E53 /* Extensions */,
-				EE4547AF298C713900699E53 /* SuperHeroGridApp.swift */,
 				EE4547DD298C74AC00699E53 /* Utilities */,
 				EE4547DA298C748000699E53 /* Model */,
 				EE4547DB298C748700699E53 /* View */,
@@ -222,8 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				EE4547E3298C785600699E53 /* APIRouter.swift */,
-				EE4547EF298C8E8C00699E53 /* Constants.swift */,
 				EE4547F1298C900800699E53 /* APIClient.swift */,
+				EE4547EF298C8E8C00699E53 /* Constants.swift */,
+				EE4547F3298CAD4600699E53 /* ClientSessionManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				EE4547EA298C7B1500699E53 /* SuperHeroDataService.swift in Sources */,
 				EE4547E7298C790000699E53 /* DeveloperPreview.swift in Sources */,
 				EE4547B0298C713900699E53 /* SuperHeroGridApp.swift in Sources */,
+				EE4547F4298CAD4600699E53 /* ClientSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

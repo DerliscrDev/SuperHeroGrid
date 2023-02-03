@@ -10,44 +10,79 @@ import SwiftUI
 struct SuperHeroItemView: View {
     
     var superHero: SuperHeroModel
+    var superHeroViewModel: SuperHeroViewModel
     
     var body: some View {
         ZStack {
-//            Image(uiImage: superHero.image)
-//                .resizable()
-//                .scaledToFill()
-//                .cornerRadius(12)
+            AsyncImage(url: URL(string: superHero.images?.sm ?? ""))
+                .scaledToFit()
+                .cornerRadius(12)
             
-            HStack {
+            VStack {
+                HStack(alignment: .center) {
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "eye.slash.circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(Color.blue)
+                            .frame(width: 30, height: 30)
+                    }
+                    .background(
+                        Circle()
+                            .foregroundColor(.white)
+                    )
+                    .padding(.horizontal, 10)
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "minus.circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(Color.red)
+                            .frame(width: 30, height: 30)
+                    }
+                    .background(
+                        Circle()
+                            .foregroundColor(.white)
+                    )
+                }
+                .offset(y: -10)
+                
+                Spacer()
+                
                 VStack(alignment: .leading, spacing: 8) {
                     Text(superHero.name ?? "")
                         .font(.system(size: 15))
                         .fontWeight(.heavy)
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Height: \(superHero.appearance?.height?.last ?? "")")
                             .font(.caption2)
                             .fontWeight(.semibold)
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                         
                         Text("Weight: \(superHero.appearance?.weight?.last ?? "")")
                             .font(.caption2)
                             .fontWeight(.semibold)
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                     }
                 }
-//                .offset(y: 80)
-                .padding(.horizontal, 10)
-                Spacer()
             }
         }
+        .frame(width: 160, height: 240)
     }
 }
 
 struct SuperHeroItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SuperHeroItemView(superHero: dev.superHero)
+        SuperHeroItemView(superHero: dev.superHero, superHeroViewModel: dev.superHeroViewModel)
+            .previewLayout(.sizeThatFits)
             .padding()
     }
 }
